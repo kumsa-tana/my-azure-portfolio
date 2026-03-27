@@ -1,0 +1,100 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa; /* light, professional background */
+  color: #333;
+}
+
+/* ===== Header ===== */
+h1 {
+  color: #1e3a8a; /* professional blue */
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #256d85; /* subtle teal for section titles */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc; /* underline effect */
+  padding-bottom: 5px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 1.1em;
+}
+
+/* ===== Lists ===== */
+ul {
+  max-width: 800px;
+  margin: 10px auto 20px auto;
+  padding-left: 20px;
+}
+
+/* ===== Project Cards ===== */
+.project {
+  background-color: #ffffff; /* white card background */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.project h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+.project img {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Links ===== */
+a {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer / Live Demo ===== */
+h2 + p a {
+  font-weight: bold;
+  background-color: #256d85;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+h2 + p a:hover {
+  background-color: #1e3a8a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .project {
+    padding: 15px;
+  }
+}
