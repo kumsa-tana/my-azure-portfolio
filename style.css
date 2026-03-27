@@ -8,11 +8,22 @@ body {
   color: #333;
 }
 
+/* ===== Profile Photo ===== */
+.profile-photo {
+  width: 150px;           /* adjust size as needed */
+  height: 150px;
+  border-radius: 50%;     /* circular photo */
+  border: 3px solid #2E86C1; /* professional border */
+  display: block;
+  margin: 20px auto;      /* centers the photo */
+  object-fit: cover;      /* keeps proportions and fills the circle */
+}
+
 /* ===== Header ===== */
 h1 {
   color: #1e3a8a; /* professional blue */
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 2.5em;
 }
 
@@ -96,5 +107,10 @@ h2 + p a:hover {
 
   .project {
     padding: 15px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
   }
 }
