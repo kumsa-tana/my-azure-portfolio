@@ -4,144 +4,147 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f5f6fa; /* light, professional background */
+  background: linear-gradient(to right, #f5f6fa, #eef2f7);
   color: #333;
 }
 
+/* ===== Profile Header (MAIN FIX + IMPROVEMENT) ===== */
 .profile-header {
   display: flex;
   align-items: center;
-  justify-content: center; /* keeps whole block centered */
-  gap: 10px; /* small space between photo & text */
-  margin-top: 40px;
-  width: fit-content;      /* 👈 key fix */
-  margin-left: auto;       /* 👈 centers the whole block */
-  margin-right: auto;
-}
-
-.profile-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%; /* makes it circular */
-  object-fit: cover;
-  border: 3px solid #1e3a8a; /* optional professional border */
-}
-
-.profile-text {
-  text-align: left; /* 👈 keeps text close to photo */
-}
-
-.profile-text h1 {
-  margin: 0;
-}
-
-.profile-text .role {
-  margin: 2px 0 0 0;
+  justify-content: center;
+  gap: 12px; /* tighter spacing */
+  margin: 50px auto 20px auto;
+  width: fit-content;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* ===== Profile Photo ===== */
 .profile-photo {
-  width: 150px;           /* adjust size as needed */
-  height: 150px;
-  border-radius: 50%;     /* circular photo */
-  border: 3px solid #2E86C1; /* professional border */
-  display: block;
-  margin: 20px auto;      /* centers the photo */
-  object-fit: cover;      /* keeps proportions and fills the circle */
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e3a8a;
 }
 
-/* ===== Header ===== */
-h1 {
-  color: #1e3a8a; /* professional blue */
-  text-align: center;
-  margin-top: 20px;
-  font-size: 2.5em;
+/* ===== Profile Text ===== */
+.profile-text {
+  text-align: left;
 }
 
+.profile-text h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #1e3a8a;
+}
+
+.profile-text .role {
+  margin: 4px 0 0 0;
+  font-size: 1.05em;
+  color: #256d85;
+}
+
+/* ===== Section Titles ===== */
 h2 {
-  color: #256d85; /* subtle teal for section titles */
-  margin-top: 30px;
+  color: #256d85;
+  margin-top: 40px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #ccc; /* underline effect */
+  border-bottom: 2px solid #dcdcdc;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 /* ===== Paragraphs ===== */
 p {
   max-width: 800px;
   margin: 10px auto;
-  font-size: 1.1em;
+  font-size: 1.05em;
+  text-align: center;
 }
 
 /* ===== Lists ===== */
 ul {
   max-width: 800px;
-  margin: 10px auto 20px auto;
+  margin: 10px auto 25px auto;
   padding-left: 20px;
 }
 
 /* ===== Project Cards ===== */
 .project {
-  background-color: #ffffff; /* white card background */
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 20px;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 900px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .project h3 {
   color: #1e3a8a;
   margin-top: 0;
+  text-align: center;
 }
 
 .project img {
   display: block;
   margin: 15px auto;
   max-width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
 /* ===== Links ===== */
 a {
   color: #1e3a8a;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* ===== Footer / Live Demo ===== */
+/* ===== Buttons (Live Demo) ===== */
 h2 + p a {
   font-weight: bold;
-  background-color: #256d85;
+  background: linear-gradient(135deg, #256d85, #1e3a8a);
   color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 h2 + p a:hover {
-  background-color: #1e3a8a;
+  opacity: 0.9;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  h1 {
-    font-size: 2em;
+  .profile-text {
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
   }
 
   .project {
     padding: 15px;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: 120px;
   }
 }
