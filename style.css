@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* center on page */
-  gap: 20px; /* space between photo and text */
+  gap: 10px; /* space between photo and text */
   margin-top: 40px;
 }
 
