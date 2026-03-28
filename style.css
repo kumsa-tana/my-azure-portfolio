@@ -27,16 +27,16 @@ body {
   border: 3px solid #1e3a8a; /* optional professional border */
 }
 
-.profile-text h1 {
-  margin: 0;
-  color: #1e3a8a;
-  font-size: 2.5em;
+.profile-text {
+  text-align: left; /* 👈 keeps text close to photo */
 }
 
-.profile-text p.role {
-  margin: 5px 0 0 0;
-  font-size: 1.1em;
-  color: #256d85;
+.profile-text h1 {
+  margin: 0;
+}
+
+.profile-text .role {
+  margin: 2px 0 0 0;
 }
 
 /* ===== Profile Photo ===== */
