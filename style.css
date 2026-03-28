@@ -8,12 +8,12 @@ body {
   color: #333;
 }
 
-/* ===== Profile Header (MAIN FIX + IMPROVEMENT) ===== */
+/* ===== Profile Header ===== */
 .profile-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* tighter spacing */
+  gap: 12px;
   margin: 50px auto 20px auto;
   width: fit-content;
   padding: 15px 25px;
@@ -69,6 +69,8 @@ p {
 /* ===== About Me Justified Text ===== */
 .about-text {
   text-align: justify;
+  max-width: 800px;
+  margin: 10px auto 20px auto;
 }
 
 /* ===== Lists ===== */
@@ -152,11 +154,4 @@ h2 + p a:hover {
   .project {
     padding: 15px;
   }
-  
-/* ===== About Me Justified Text ===== */
-.about-text p {
-  text-align: justify;
-  margin: 0 auto 20px auto; /* keeps same spacing as other paragraphs */
-  max-width: 800px;         /* match other paragraphs */
-}
 }
