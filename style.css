@@ -152,4 +152,11 @@ h2 + p a:hover {
   .project {
     padding: 15px;
   }
+  
+/* ===== About Me Justified Text ===== */
+.about-text p {
+  text-align: justify;
+  margin: 0 auto 20px auto; /* keeps same spacing as other paragraphs */
+  max-width: 800px;         /* match other paragraphs */
+}
 }
