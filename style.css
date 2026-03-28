@@ -8,13 +8,15 @@ body {
   color: #333;
 }
 
-/* Profile Header */
 .profile-header {
   display: flex;
   align-items: center;
-  justify-content: center; /* center on page */
-  gap: 10px; /* space between photo and text */
+  justify-content: center; /* keeps whole block centered */
+  gap: 10px; /* small space between photo & text */
   margin-top: 40px;
+  width: fit-content;      /* 👈 key fix */
+  margin-left: auto;       /* 👈 centers the whole block */
+  margin-right: auto;
 }
 
 .profile-photo {
