@@ -66,6 +66,11 @@ p {
   text-align: center;
 }
 
+/* ===== About Me Justified Text ===== */
+.about-text {
+  text-align: justify;
+}
+
 /* ===== Lists ===== */
 ul {
   max-width: 800px;
